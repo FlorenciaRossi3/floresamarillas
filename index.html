@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script>
+        function mostrar(id)
+        {
+            var objeto=document.getElementById(id)
+            if(objeto.style.display=="block")
+                objeto.style.display="none";
+            else
+                objeto.style.display="block";
+        }
+    </script>
+    <style>
+        .oculto {display:none;}
+    </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+<title>LUDMIBXA</title>
+</head>
+ 
+<body>
+<div class="text"><h1>Hola amor, como estamos lejos y no conozco florerias de la zona tuve la idea de hacerte este pequeño regalito. Espero te guste mucho. Te amo ♥ ♥ ♥ </h1></div>
+<div class="juntitas"><img src="foto juntitas.jpeg" alt="juntitas"></div>
+<div class="botones">
+<form>
+    <input class= "sorpresa" type="button" onclick="mostrar('contenido1')" value="REVELA UNA SORPRESA">
+    <img src="foto mila.png" class="oculto" id="contenido1">
+</form>
+<script >
+    var sonido = new Audio();
+    sonido.src="flores.mp3";
+    
+    </script>
+    
+        <button class="contact100-form-btn" id="enviar" onmousedown="sonido.play()">
+                            CLICK ACA!!!
+                        </button>
+
+                    </div>
+
+</body>
+</html>
